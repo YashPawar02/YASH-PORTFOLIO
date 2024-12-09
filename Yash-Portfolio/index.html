@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YASH-PAWAR-PORTFOLIO</title>
+   
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
+  </head>
+  <body class="overflow-x-hidden font-Outfit bg-gradient-to-r from-sky-100 via-sky-100 to-sky-100">
+
+    <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex font-Ovo items-center justify-between bg-gradient-to-r from-blue-400 to-purple-100">
+      <h1 class="w-28 cursor-pointer mr-15 text-5xl font-semibold">YAS<span>H.</span></h1>
+      <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-15">
+        
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#Education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+
+        <div class="flex items-center gap-4 ">
+
+
+                  
+            <a href="#contact" class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-black rounded-full ml-4" >Contact</a>
+
+
+            <button class="block md:hidden ml-3" onclick="openMenu()">
+                <img src="./IMG/Menu-black.png" alt="" class="w-8 h-8">
+            </button>
+        </div>
+
+        <!-- ...........................mobile menu....................... -->
+         <ul id="sidemenu" class="flex md:hidden font-Ovo  flex-col py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen gap-5 bg-rose-100 transition duration-500">
+           <div class="absolute right-6 top-6" onclick="closeMenu()">
+            <img src="./IMG/Close.png" alt="" srcset="" class="w-8 cursor-pointer" >
+           </div>
+           
+            <li><a href="#home" onclick="closeMenu()">Home</a></li>
+          <li><a href="#about" onclick="closeMenu()">About</a></li>
+          <li><a href="#education" onclick="closeMenu()">Education</a></li>
+          <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+
+         </ul>
+
+    </nav>
+
+
+    <!-- .....................header................. -->
+
+    <div id="home" class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-5">
+        <img src="./IMG/YAsh.jpg" alt="" class="rounded-full w-32">
+        <h3 class="text-xl md:text-2xl mb-3">Hi! I'm Yash Pawar <span>👋</span>
+        </h3>
+        <h2 class="text-3xl sm:text-6xl lg:text-[66px]">FullStack-Developer</h2>
+        <p class="max-w-2xl mx-auto">
+            I am a dedicated Full Stack Developer specializing in Java and React, with expertise in building robust and scalable web applications.Passionate about problem-solving and continuous learning, I aim to deliver impactful solutions.</p>
+
+
+            <div class="flex flex-col sm:flex-row items-center gap-5 mt-4">
+                <a href="#contact" 
+                class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2"
+                >Contact Me <img src="./IMG/contactme.png" alt="" srcset="" class="w-4"></a>
+
+                <a href="./Yash-D-Pawar-Resume.pdf" download target="_blank" 
+                class="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2"
+                >My Resume <img src="./IMG/download.png" alt="" srcset="" class="w-4 invert"  ></a>
+            </div>
+    </div>
+
+    <!-- .......................about me.................. -->
+
+    <div id="about" class="w-full px-[12%] py-10 scroll-mt-20 ">
+        <h3 class="text-center mb-2 text-lg ">INTRODUCTION</h3>
+        <h2 class="text-center text-5xl uppercase">About Me</h2>
+
+        <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
+            <div class="max-w-max mx-auto static">
+                <img src="./IMG/YAsh.jpg" alt="" srcset="" class="w-64 sm:w-80 rounded-3xl max-w-none ">
+
+                <!-- <div class="bg-white w-1/2 aspect-square absolute right-0 bottom-0 rounded-full translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px_rgba(149,0,162,0.20)] flex items-center justify-center ">
+                        - <img src="./IMG/circulartext.png" alt="" class="w-full animate-spin_slow">
+                        <img src="./IMG/Developer.png" alt="" class="w-1/4 absolute">
+                   
+                        
+                </div>  -->
+            </div>
+
+
+            <div class="flex-1">
+                <p class="mb-10 max-w-2xl ">Dynamic Full Stack Developer to designing and implementing robust web applications using Java technologies. Proficient in both frontend and backend development, skilled in frameworks like Spring and Hibernate, and experienced with HTML, CSS, and JavaScript frameworks such as React. Intermediate understanding of RESTful APIs and database management (MySQL). Passionate about delivering high-quality code, optimizing user experience.</p>
+
+
+                <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
+                    <li class="border-[0.5px] border-black rounded-lg p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                        <img src="./IMG/code.png" alt="" srcset="" class="invert w-7 mt-3">
+                        <h3 class="my-4 font-semibold text-gray-700">Languages</h3>
+                        <p class="text-gray-800 text-sm uppercase">HTML, CSS, JAVASCRIPT, REACT.JS, JAVA, SPRINGBOOT, HIBERNET, GITHUB, MYSQL, JDBC.</p>
+                    </li>
+                    <li class="border-[0.5px] border-black rounded-lg p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                        <img src="./IMG/Education.png" alt="" srcset="" class="invert w-7 mt-3">
+                        <h3 class="my-4 font-semibold text-gray-700">Education</h3>
+                        <p class="text-gray-800 text-sm">Bachlore of Computer Sci. and Tech. <br>Shivaji University, Kholapur <br></p>
+                    </li>
+                    <li class="border-[0.5px] border-black rounded-lg p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                        <img src="./IMG/Project.png" alt="" srcset="" class="invert w-7 mt-3">
+                        <h3 class="my-4 font-semibold text-gray-700">Projects</h3>
+                        <p class="text-gray-800 text-sm">Built More Than 5 Projects</p>
+                    </li>
+                </ul>
+                <h4 class="my-6 text-gray-600 ">TOOLS I USED</h4>
+                <ul class="flex items-center gap-3 sm:gap-5">
+                    <li class="flex items-center justify-center w-12 sm:14 aspect-square border border-gray-700 rounded-sm cursor-pointer hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] ">
+                        <img src="./IMG/VScode.jpg" alt="" srcset="" class="w-10 sm:w-12 ">
+                    </li>
+                    <li class="flex items-center justify-center w-12 sm:14 aspect-square border border-gray-700 rounded-sm cursor-pointer hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] ">
+                        <img src="./IMG/intellige.png" alt="" srcset="" class="w-10 sm:w-12 ">
+                    </li>
+                    <li class="flex items-center justify-center w-12 sm:14 aspect-square border border-gray-700 rounded-sm cursor-pointer hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] ">
+                        <img src="./IMG/eclips.png" alt="" srcset="" class="w-10 sm:w-12 ">
+                    </li>
+                    <li class="flex items-center justify-center w-12 sm:14 aspect-square border border-gray-700 rounded-sm cursor-pointer hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] ">
+                        <img src="./IMG/mysql.png" alt="" srcset="" class="w-10 sm:w-12 ">
+                    </li>
+                  
+                    <li class="flex items-center justify-center w-12 sm:14 aspect-square border border-gray-700 rounded-sm cursor-pointer hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] ">
+                        <img src="./IMG/figma.png" alt="" srcset="" class="w-10 sm:w-12 ">
+                    </li>
+                    <li class="flex items-center justify-center w-12 sm:14 aspect-square border border-gray-700 rounded-sm cursor-pointer hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] ">
+                        <img src="./IMG/git.png" alt="" srcset="" class="w-10 sm:w-12 ">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- .................Educationsection................... -->
+     <div id="Education" class="w-full px-[12%] py-10 scroll-mt-20">
+        <h3 class="text-center mb-2 text-5xl uppercase ">Education</h3>
+        
+        <ul class="grid grid-cols-1 sm:grid-cols-4 gap-20 max-w-10xl mt-20">
+
+
+        <li class="border-[0.5px] border-black rounded-lg p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+            <img src="./IMG/Education.png" alt="" srcset="" class="invert w-7 mt-3">
+            <h3 class="my-4 font-semibold text-gray-700">HIGH SCHOOL</h3>
+            <p class="text-gray-800 text-sm">Shri.Sevagiri Vidyalay Pusegoan, Satara <br> Percent-78%</p>
+        </li>
+        <li class="border-[0.5px] border-black rounded-lg p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+            <img src="./IMG/Education.png" alt="" srcset="" class="invert w-7 mt-3">
+            <h3 class="my-4 font-semibold text-gray-700 uppercase">Senior Secondary Education.</h3>
+            <p class="text-gray-800 text-sm capitalize">Shivaji University, Kholpur <br>yashwantrav chavan institute of science, satara <br> Percent-75%</p>
+        </li>
+        <li class="border-[0.5px] border-black rounded-lg p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+            <img src="./IMG/Education.png" alt="" srcset="" class="invert w-7 mt-3">
+            <h3 class="my-4 font-semibold text-gray-700 uppercase">highest Education</h3>
+            <p class="text-gray-800 text-sm capitalize">Bachlore of Computer Sci. and Tech. <br>yashwantrav chavan institute of science, satara  <br>Shivaji University, Kholapur <br>GPA - 7.83 / Percent-69%</p>
+        </li>
+        <li class="border-[0.5px] border-black rounded-lg p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+            <img src="./IMG/Education.png" alt="" srcset="" class="invert w-7 mt-3">
+            <h3 class="my-4 font-semibold text-gray-700 uppercase">coursework</h3>
+            <p class="text-gray-800 text-sm">1)Diploma in J2EE <br>2)Diploma in REACT.JS <br>3)Diploma in WEB DESIGN <br> Technolearn Trainings, Pune <br>GRADE - A+</p>
+        </li>
+        </ul>
+
+        <h3 class="text-center mb-2 text-5xl uppercase mt-10">CERTIFICATION</h3>
+        <div>         
+            <div class="w-full bg-white rounded-lg px-5 py-5 flex justify-between mt-8">
+            <h3>Diploma in J2EE</h3>
+
+          </div>
+            <div class="w-full bg-white rounded-lg px-5 py-5 flex justify-between mt-8">
+            <h3>Diploma in REACT.JS</h3>
+        
+          </div>
+            <div class="w-full bg-white rounded-lg px-5 py-5 flex justify-between mt-8">
+            <h3>Diploma in WEB DESIGN</h3>
+        
+          </div>
+            <div class="w-full bg-white rounded-lg px-5 py-5 flex justify-between mt-8">
+            <h3>YC-CII Incubation Skill Course 2022-2023(Entreprenurship)</h3>
+    
+          </div>
+            <div class="w-full bg-white rounded-lg px-5 py-5 flex justify-between mt-8">
+            <h3>Graphic Designing (Beginner)</h3>
+        
+          </div>
+
+        </div>
+ 
+     </div>
+
+
+     <!-- ...........................Projects section................... -->
+
+     <div id="projects" class="w-full px-[12%] py-10 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg">My Portfolio</h4>
+        <h2 class="text-center text-5xl">My Latest Work</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 capitalize">welcome to my fullstack development portfolio! explore a Collection of projects showcasing my expertise in fullstack development</p>
+
+
+      
+        <div class="grid grid-cols-1 sm:grid-cols-4 my-10 gap-5">
+            <div class="aspect-square bg-[url('./IMG/Movie.jpg')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+                <div class="bg-white w-10/12 rounded-md border border-black absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                    
+                    <div>
+                        <h2 class="font-semibold">Fullstack-Project</h2>
+                        <p class="text-sm text-gray-600">MOVIE-DOWNLOAD-SITE</p>
+                        <button class="border rounded-lg w-14 border-black bg-gray-300"><a href="https://github.com/YashPawar02/Movie-Downloading-Site" target="_blank">click</a></button>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            <div class="aspect-square bg-[url('./IMG/Doctor.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+                <div class="bg-white w-10/12 rounded-md border border-black absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                    
+                    <div>
+                        <h2 class="font-semibold">Fullstack-Project</h2>
+                        <p class="text-sm text-gray-600">DOCTOR-PATIENT-PORTAL</p>
+                        <button class="border rounded-lg w-14 border-black bg-gray-300"><a href="https://github.com/YashPawar02/Doctor-Patient-Portal" target="_blank">click</a></button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="aspect-square bg-[url('./IMG/Emp.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+                <div class="bg-white w-10/12 rounded-md border border-black absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                    
+                    <div>
+                        <h2 class="font-semibold">React.js-Project</h2>
+                        <p class="text-sm text-gray-600">EMPLOYEE-MANAGE-SITE</p>
+                        <button class="border rounded-lg w-14 border-black bg-gray-300"><a href="https://github.com/YashPawar02/EMPLOYEE-MANAGEMENT-SITE" target="_blank">click</a></button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="aspect-square bg-[url('./IMG/Ecom.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+                <div class="bg-white w-10/12 rounded-md border border-black absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                    
+                    <div>
+                        <h2 class="font-semibold">React.js-Project</h2>
+                        <p class="text-sm text-gray-600">E-COMMMERCE SITE</p>
+                        <button class="border rounded-lg w-14 border-black bg-gray-300"><a href="https://github.com/YashPawar02/E-COMMERCE-SITE" target="_blank">click</a></button>
+                    </div>
+                    
+                </div>
+            </div>
+            
+    </div>
+
+     </div>
+
+     <!-- .................contact sectoin .................. -->
+
+    <div id="contact" class="w-full px-[12%] py-10 scroll-mt-20 ">
+
+        <h4 class="text-center mb-2 text-lg">Connect With Me</h4>
+        <h2 class="text-center text-5xl">Get in Touch</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 capitalize">I'd love to hear from you! Of you have any questions, comments or feedback, please use the form below.</p>
+
+        <form method="post" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
+
+            <input type="hidden" name="access_key" value="11c0056c-763b-4379-a2ab-3cf04d537c3f">
+
+
+            <div class="grid grid-cols-2 gap-6 mt-10 mb-8">
+                <input type="text" name="name" required placeholder="Enter Your Name" class="flex p-3 outline-none border-[0.5px] border-gray-500 rounded-md bg-white">
+                <input type="email" required placeholder="Enter Your Email" class="flex p-3 outline-none border-[0.5px] border-gray-500 rounded-md bg-white" name="email">
+            </div>
+            <textarea name="message" id="" rows="6" placeholder="Enter Your Msg" class="w-full p-4 outline-none border-[0.5px] border-gray-500 rounded-md bg-white"></textarea>
+
+            <button class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-lg mx-auto mt-3 hover:bg-black duration-500">SUBMIT NOW</button>
+        </form>
+
+        <div class="flex justify-center items-center space-x-3  p-4 rounded-lg mt-2" >
+            <i class="fas fa-envelope text-xl"></i>
+            <a href="mailto:pawaryash6262@gmail.com" class="text-gray-700 text-lg hover:underline">
+              pawaryash6262@gmail.com
+            </a>
+
+     </div>
+    </div>
+
+     <!-- .................footer........................ -->
+
+    
+        <div class="text-center flex justify-between items-center px-5 mb-0 border-t border-gray-500 bg-black text-white p-2 mt-12">
+            <p>&copy; 2024 YASH-PAWAR. All Rights Reserved.</p>
+
+
+
+            <div class="flex items-center gap-10 justify-center mt-4 sm:mt-0">
+                <p class="font-semibold text-xl ">
+                    <a href="https://linkedin.com/in/yash-pawar-0999b9315" target="_blank"><i class="fa-brands fa-1x  fa-linkedin"></i></a> |
+                    <a href=" https://github.com/YashPawar02" target="_blank"><i class="fa-brands fa-1x  fa-github"></i></a> |
+                    <a href="https://www.instagram.com/yashhh.039" target="_blank"> <i class="fa-brands fa-1x fa-instagram"></i></a> 
+                    <!-- <a href="https://linkedin.com/in/yourprofile" target="_blank"> <i class="fa-brands fa-facebook"></i></i></a> -->
+                  </p>
+                  
+            </div>
+        </div>
+
+        <!-- ..............top............. -->
+
+    <script src="./script.js"></script>
+  </body>
+</html>
